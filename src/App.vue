@@ -3,28 +3,6 @@ import Book from './components/book.vue'
 
 import {ref, shallowRef, triggerRef, reactive, computed} from 'vue'
 
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-} from 'chart.js'
-import { Line } from 'vue-chartjs'
-
-ChartJS.register(
-  Title, 
-  Tooltip, 
-  Legend, 
-  LineElement, 
-  PointElement, 
-  CategoryScale, 
-  LinearScale
-)
-
 const state = reactive({
   bias: 4000,
   multiplier: 100,

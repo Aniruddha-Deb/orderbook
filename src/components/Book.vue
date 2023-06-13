@@ -196,7 +196,7 @@ function bid(price) {
     :we_bid="entry.we_bid"
     :we_ask="entry.we_ask"
     :price="entry.price"
-    :mult="this.multiplier"
+    :mult="props.multiplier"
     @we-bid="bid"
     @we-withdraw-bid="withdraw_bid"
     @we-withdraw-ask="withdraw_ask"
